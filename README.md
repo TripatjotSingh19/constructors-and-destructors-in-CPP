@@ -10,7 +10,7 @@ Windows/Linux
 # 1. Constructor function
 A constructor is a special member function of a class that is automatically invoked when an object of that class is created. Its primary role is to initialize the object’s data members.
 
-Key Characteristics
+# Key Characteristics
 Same name as the class.
 
 No return type, not even void.
@@ -36,7 +36,7 @@ Used to initialize objects with default values.
                     cout << "Default constructor called!" << endl;
                 }
             };
-2. Parameterized Constructor
+# 2. Parameterized Constructor
 Accepts arguments to initialize data members with specific values.
 
 Enables flexible object creation.
@@ -49,7 +49,7 @@ Enables flexible object creation.
                 length = l;
             }
         };
-3. Copy Constructor
+# 3. Copy Constructor
 Initializes a new object using an existing object of the same class.
 
 Syntax: ClassName(const ClassName &obj)
@@ -67,12 +67,13 @@ You can define multiple constructors in a class with different parameter lists. 
             Box() { length = 0; }
             Box(int l) { length = l; }
         };   
-2. Destructor function
+# 2. Destructor function
 A destructor is a special member function of a class that is automatically invoked when an object goes out of scope or is explicitly deleted. Its primary role is to release resources that the object may have acquired during its lifetime—like memory, file handles, or network connections.
 
 Think of it as the cleanup crew that arrives after a party: quiet, efficient, and absolutely necessary.
 
-Key Characteristics of Destructors
+# Key Characteristics of Destructors
+
 Name: Same as the class, but prefixed with a tilde ~.
 
 No parameters: Cannot accept arguments.
@@ -85,7 +86,7 @@ Cannot be overloaded: Only one destructor per class.
 
 Cannot be inherited: But base class destructors are called automatically.
 
-Syntax of a Destructor
+# Syntax of a Destructor
     cpp
         class MyClass {
         public:
@@ -93,7 +94,8 @@ Syntax of a Destructor
                 // Cleanup code
             }
         };
-When Is a Destructor Called?
+# When Is a Destructor Called?
+
 Destructors are triggered in the following scenarios:
 
 When a local object goes out of scope.
@@ -102,7 +104,8 @@ When a dynamically allocated object is deleted using delete.
 
 When the program ends and global/static objects are destroyed.
 
-Why Use Destructors?
+# Why Use Destructors?
+
 Destructors are essential for:
 
 Memory management: Freeing dynamically allocated memory.
@@ -111,7 +114,7 @@ Resource deallocation: Closing files, releasing locks, etc.
 
 Avoiding memory leaks: Ensuring resources are not left hanging.
 
-Example: Destructor in Action
+# Example: Destructor in Action
 cpp
  #include <iostream>
 using namespace std;
@@ -137,8 +140,8 @@ Code
 
 Constructor called
 Destructor called
-Algorithm
-Program 1
+# Algorithm
+# Program 1
 Objective : default constructor inside class
 
 Steps
@@ -174,7 +177,8 @@ Steps
             Call st.display() to show the student details
             
             4. End
-Program 2
+
+# Program 2
 Objective : Default constructor outside class
 
 Steps
@@ -210,7 +214,8 @@ Steps
             Call st.display() to show the student details
             
             4. End
-Program 3
+
+# Program 3
 Objective : parameterized constructor
 
 Steps
@@ -246,7 +251,8 @@ Steps
             Call the display() function using the object ct
             
             5. End
-Program 4
+
+# Program 4
 Objective : Copy constructor
 
 Steps
@@ -285,7 +291,7 @@ Steps
             
             6. In the main() function
             
-            Create object st1 using the parameterized constructor with values "Tanmay" and 19
+            Create object st1 using the parameterized constructor with values "Tripatjot" and 19
             
             Call st1.display() to show original values
             
@@ -298,7 +304,8 @@ Steps
             Call st2.display() to show copied values
             
             7. End
-Program 5
+
+# Program 5
 Objective : destructor function
 
 Steps
